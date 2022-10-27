@@ -311,6 +311,10 @@ header .container .header-content .img-user {
 }
 .sidbar ul li {
   width: 100%;
+}
+.sidbar ul li a {
+  display: block;
+  width: 100%;
   padding: 12px;
   margin-bottom: 5px;
   border-radius: 5px;
@@ -326,12 +330,12 @@ header .container .header-content .img-user {
   margin-right: 10px;
   transition: var(--transtion);
 }
-.sidbar ul li.active,
-.sidbar ul li:hover {
+.sidbar ul li a.active,
+.sidbar ul li a:hover {
   background-color: #f6f6f6;
 }
-.sidbar ul li.active a i,
-.sidbar ul li:hover a i {
+.sidbar ul li a.active i,
+.sidbar ul li a:hover i {
   margin-right: 15px;
 }
 .logout {
@@ -396,6 +400,11 @@ header .container .header-content .img-user {
   background-color: #fff;
   border-radius: 10px;
   padding: 15px;
+}
+@media (max-width: 768px) {
+  .dashbord .dashbord-content {
+    grid-template-columns: minmax(250px, 1fr);
+  }
 }
 /* Welcom Box  */
 .dashbord .dashbord-content .welocom-box {
@@ -582,11 +591,6 @@ header .container .header-content .img-user {
 }
 .yearly-box .content-yearly .item-year.green .details span::after {
   border-color: var(--green-color) transparent transparent;
-}
-@media (max-width: 768px) {
-  .dashbord .dashbord-content {
-    grid-template-columns: minmax(250px, 1fr);
-  }
 }
 /* Tickets Statistics */
 .tickets-box .tickets-content {
@@ -951,6 +955,7 @@ header .container .header-content .img-user {
   width: 100%;
   min-width: 1000px;
   font-size: 15px;
+  border-spacing: 0;
 }
 .projects .content-projects table thead td {
   background-color: #eee;
@@ -963,6 +968,7 @@ header .container .header-content .img-user {
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
   transition: var(--transtion);
+  font-size: 14px;
 }
 .projects .content-projects table tbody td:last-child {
   border-right: 1px solid #eee;
@@ -1108,4 +1114,89 @@ header .container .header-content .img-user {
 }
 .friends-content .box-frind .join .btns a {
   display: inline-block;
+}
+/* =========================Projects===================== */
+.projects .projects-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 15px;
+}
+
+.projects .projects-content .project-item {
+  position: relative;
+}
+.projects .projects-content .project-item .date {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: var(--grey-color);
+  font-size: 14px;
+}
+.projects .projects-content .project-item h4 {
+  padding: 20px 0 10px;
+  font-size: 18px;
+}
+.projects .projects-content .project-item p {
+  font-size: 15px;
+  color: var(--grey-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.projects .projects-content .project-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.projects .projects-content .project-item img:not(:first-child) {
+  margin-left: -20px;
+}
+.projects .projects-content .project-item .skills {
+  margin-top: 25px;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 5px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.projects .projects-content .project-item .skills .btn-box {
+  background-color: #eee;
+  color: #000;
+}
+.projects .projects-content .project-item .foot {
+  padding-top: 15px;
+}
+.projects .projects-content .project-item .foot .pro {
+  position: relative;
+  height: 7px;
+}
+.projects .projects-content .project-item .foot .pro span {
+  height: 7px;
+  position: absolute;
+  border-radius: 5px;
+}
+.projects .projects-content .project-item .foot .pro .back {
+  background-color: #eee;
+  width: 200px;
+}
+.projects .projects-content .project-item .foot .pro .front {
+  z-index: 2;
+}
+.projects .projects-content .project-item .foot .pri {
+  color: var(--grey-color);
+  font-size: 14px;
+}
+.projects .projects-content .project-item .foot .pri i {
+  padding-right: 5px;
+}
+@media (max-width: 768px) {
+  .projects .projects-content {
+    grid-template-columns: minmax(250px, 1fr);
+  }
+  .projects .projects-content .project-item .skills {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
 }
