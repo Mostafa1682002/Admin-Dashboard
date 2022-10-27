@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN ICONS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Friends</title>
+  </head>
+  <body>
+    <!-- =========================Header===================== -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <span class="fas fa-bars open-sidbar"></span>
+          <form action="">
+            <i class="fas fa-search"></i>
+            <input type="search" name="" id="" placeholder="Search...." />
+          </form>
+          <div class="user">
+            <div class="user-txt">
+              <h3 class="user-name">Mostafa</h3>
+              <p>Admin</p>
+            </div>
+            <img src="imgs/avatar.png" alt="" class="img-user" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- =========================Sidbar===================== -->
+    <div class="sidbar">
+      <span class="fas fa-times close-sidbar"></span>
+      <h2 class="logo">
+        <a href="index.html">Mostafa</a>
+      </h2>
+      <ul>
+        <li>
+          <a href="index.html"
+            ><i class="fa-solid fa-chart-bar fa-fw"></i
+            ><span>Dashboard</span></a
+          >
+        </li>
+        <li>
+          <a href=""><i class="fa-regular fa-user"></i><span>Profile</span></a>
+        </li>
+        <li>
+          <a href="courses.html"
+            ><i class="fa-solid fa-graduation-cap fa-fw"></i
+            ><span>Courses</span></a
+          >
+        </li>
+        <li>
+          <a href="projects.html"
+            ><i class="fa-solid fa-diagram-project fa-fw"></i
+            ><span>Projects</span></a
+          >
+        </li>
+        <li>
+          <a href="files.html"
+            ><i class="fa-regular fa-file fa-fw"></i><span>files</span></a
+          >
+        </li>
+        <li>
+          <a href="plans.html"
+            ><i class="fa-regular fa-credit-card fa-fw"></i
+            ><span>Plans</span></a
+          >
+        </li>
+        <li class="active">
+          <a href="friends.html"
+            ><i class="fa-regular fa-circle-user fa-fw"></i
+            ><span>friends</span></a
+          >
+        </li>
+        <li>
+          <a href="settings.html"
+            ><i class="fa-solid fa-gear"></i><span>Settings</span></a
+          >
+        </li>
+      </ul>
+      <div class="logout">
+        <a href="index.html"
+          ><img src="imgs/logout.svg" alt="" /><span>Logout</span></a
+        >
+      </div>
+    </div>
+    <!-- =========================Friends===================== -->
+    <section class="friends">
+      <h1 class="title-page">Friends</h1>
+      <div class="friends-content">
+        <div class="box-frind box-white">
+          <div class="des-frind">
+            <div class="contact">
+              <span> <i class="fas fa-phone"></i></span>
+              <span> <i class="fa-regular fa-envelope"></i></span>
+            </div>
+            <img src="imgs/friend-01.jpg" alt="" />
+            <h4 class="name">Mostafa Hossam</h4>
+            <p class="job">frontend developer</p>
+          </div>
+          <ul class="list-frind">
+            <li>
+              <i class="fa-regular fa-face-smile fa-fw"></i
+              ><span>99 Friend</span>
+            </li>
+            <li>
+              <i class="fas fa-code-commit fa-fw"></i><span>15 Projects</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-newspaper fa-fw"></i
+              ><span>25 Articles</span>
+            </li>
+          </ul>
+          <div class="join d-flex">
+            <span>Joined 02/10/2021</span>
+            <div class="btns">
+              <a href="profile.html" class="btn-box bg-blue">profile</a>
+              <a href="" class="btn-box bg-red">remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="box-frind box-white">
+          <div class="des-frind">
+            <div class="contact">
+              <span> <i class="fas fa-phone"></i></span>
+              <span> <i class="fa-regular fa-envelope"></i></span>
+            </div>
+            <img src="imgs/friend-02.jpg" alt="" />
+            <h4 class="name">Omar Fathy</h4>
+            <p class="job">cloud developer</p>
+          </div>
+          <ul class="list-frind">
+            <li>
+              <i class="fa-regular fa-face-smile fa-fw"></i
+              ><span>35 Friend</span>
+            </li>
+            <li>
+              <i class="fas fa-code-commit fa-fw"></i><span>15 Projects</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-newspaper fa-fw"></i
+              ><span>10 Articles</span>
+            </li>
+          </ul>
+          <div class="join d-flex">
+            <span>Joined 24/10/2020</span>
+            <div class="btns">
+              <a href="profile.html" class="btn-box bg-blue">profile</a>
+              <a href="" class="btn-box bg-red">remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="box-frind box-white">
+          <div class="des-frind">
+            <div class="contact">
+              <span> <i class="fas fa-phone"></i></span>
+              <span> <i class="fa-regular fa-envelope"></i></span>
+            </div>
+            <img src="imgs/friend-03.jpg" alt="" />
+            <h4 class="name">Ahmed Hossam</h4>
+            <p class="job">mobile developer</p>
+          </div>
+          <ul class="list-frind">
+            <li>
+              <i class="fa-regular fa-face-smile fa-fw"></i
+              ><span>80 Friend</span>
+            </li>
+            <li>
+              <i class="fas fa-code-commit fa-fw"></i><span>50 Projects</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-newspaper fa-fw"></i
+              ><span>29 Articles</span>
+            </li>
+          </ul>
+          <div class="join d-flex">
+            <span>Joined 02/08/2019</span>
+            <div class="btns">
+              <a href="profile.html" class="btn-box bg-blue">profile</a>
+              <a href="" class="btn-box bg-red">remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="box-frind box-white">
+          <div class="des-frind">
+            <div class="contact">
+              <span> <i class="fas fa-phone"></i></span>
+              <span> <i class="fa-regular fa-envelope"></i></span>
+            </div>
+            <img src="imgs/friend-04.jpg" alt="" />
+            <h4 class="name">Shady Nabil</h4>
+            <p class="job">Back-End developer</p>
+          </div>
+          <ul class="list-frind">
+            <li>
+              <i class="fa-regular fa-face-smile fa-fw"></i
+              ><span>70 Friend</span>
+            </li>
+            <li>
+              <i class="fas fa-code-commit fa-fw"></i><span>30 Projects</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-newspaper fa-fw"></i
+              ><span>14 Articles</span>
+            </li>
+          </ul>
+          <div class="join d-flex">
+            <span>Joined 02/10/2021</span>
+            <div class="btns">
+              <a href="profile.html" class="btn-box bg-blue">profile</a>
+              <a href="" class="btn-box bg-red">remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="box-frind box-white">
+          <div class="des-frind">
+            <div class="contact">
+              <span> <i class="fas fa-phone"></i></span>
+              <span> <i class="fa-regular fa-envelope"></i></span>
+            </div>
+            <img src="imgs/friend-05.jpg" alt="" />
+            <h4 class="name">Ahmed nasser</h4>
+            <p class="job">javascript developer</p>
+          </div>
+          <ul class="list-frind">
+            <li>
+              <i class="fa-regular fa-face-smile fa-fw"></i
+              ><span>100 Friend</span>
+            </li>
+            <li>
+              <i class="fas fa-code-commit fa-fw"></i><span>48 Projects</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-newspaper fa-fw"></i
+              ><span>80 Articles</span>
+            </li>
+          </ul>
+          <div class="join d-flex">
+            <span>Joined 02/10/2021</span>
+            <div class="btns">
+              <a href="profile.html" class="btn-box bg-blue">profile</a>
+              <a href="" class="btn-box bg-red">remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="box-frind box-white">
+          <div class="des-frind">
+            <div class="contact">
+              <span> <i class="fas fa-phone"></i></span>
+              <span> <i class="fa-regular fa-envelope"></i></span>
+            </div>
+            <img src="imgs/friend-03.jpg" alt="" />
+            <h4 class="name">Mohamed Ibrahim</h4>
+            <p class="job">Algorithm Developerr</p>
+          </div>
+          <ul class="list-frind">
+            <li>
+              <i class="fa-regular fa-face-smile fa-fw"></i
+              ><span>90 Friend</span>
+            </li>
+            <li>
+              <i class="fas fa-code-commit fa-fw"></i><span>18 Projects</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-newspaper fa-fw"></i
+              ><span>30 Articles</span>
+            </li>
+          </ul>
+          <div class="join d-flex">
+            <span>Joined 02/10/2021</span>
+            <div class="btns">
+              <a href="profile.html" class="btn-box bg-blue">profile</a>
+              <a href="" class="btn-box bg-red">remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="box-frind box-white">
+          <div class="des-frind">
+            <div class="contact">
+              <span> <i class="fas fa-phone"></i></span>
+              <span> <i class="fa-regular fa-envelope"></i></span>
+            </div>
+            <img src="imgs/friend-04.jpg" alt="" />
+            <h4 class="name">Ahmed Abuzaid</h4>
+            <p class="job">Content Creator</p>
+          </div>
+          <ul class="list-frind">
+            <li>
+              <i class="fa-regular fa-face-smile fa-fw"></i
+              ><span>80 Friend</span>
+            </li>
+            <li>
+              <i class="fas fa-code-commit fa-fw"></i><span>33 Projects</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-newspaper fa-fw"></i
+              ><span>30 Articles</span>
+            </li>
+          </ul>
+          <div class="join d-flex">
+            <span>Joined 05/06/2022</span>
+            <div class="btns">
+              <a href="profile.html" class="btn-box bg-blue">profile</a>
+              <a href="" class="btn-box bg-red">remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="box-frind box-white">
+          <div class="des-frind">
+            <div class="contact">
+              <span> <i class="fas fa-phone"></i></span>
+              <span> <i class="fa-regular fa-envelope"></i></span>
+            </div>
+            <img src="imgs/friend-05.jpg" alt="" />
+            <h4 class="name">Gareeb Elshiekh</h4>
+            <p class="job">javascript developer</p>
+          </div>
+          <ul class="list-frind">
+            <li>
+              <i class="fa-regular fa-face-smile fa-fw"></i
+              ><span>53 Friend</span>
+            </li>
+            <li>
+              <i class="fas fa-code-commit fa-fw"></i><span>15 Projects</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-newspaper fa-fw"></i
+              ><span>18 Articles</span>
+            </li>
+          </ul>
+          <div class="join d-flex">
+            <span>Joined 02/02/2020</span>
+            <div class="btns">
+              <a href="profile.html" class="btn-box bg-blue">profile</a>
+              <a href="" class="btn-box bg-red">remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="box-frind box-white">
+          <div class="des-frind">
+            <div class="contact">
+              <span> <i class="fas fa-phone"></i></span>
+              <span> <i class="fa-regular fa-envelope"></i></span>
+            </div>
+            <img src="imgs/friend-02.jpg" alt="" />
+            <h4 class="name">Hamza nabil</h4>
+            <p class="job">frontend developer</p>
+          </div>
+          <ul class="list-frind">
+            <li>
+              <i class="fa-regular fa-face-smile fa-fw"></i
+              ><span>105 Friend</span>
+            </li>
+            <li>
+              <i class="fas fa-code-commit fa-fw"></i><span>15 Projects</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-newspaper fa-fw"></i
+              ><span>25 Articles</span>
+            </li>
+          </ul>
+          <div class="join d-flex">
+            <span>Joined 27/09/2022</span>
+            <div class="btns">
+              <a href="profile.html" class="btn-box bg-blue">profile</a>
+              <a href="" class="btn-box bg-red">remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="box-frind box-white">
+          <div class="des-frind">
+            <div class="contact">
+              <span> <i class="fas fa-phone"></i></span>
+              <span> <i class="fa-regular fa-envelope"></i></span>
+            </div>
+            <img src="imgs/friend-01.jpg" alt="" />
+            <h4 class="name">Amr Hendawy</h4>
+            <p class="job">Back-End developer</p>
+          </div>
+          <ul class="list-frind">
+            <li>
+              <i class="fa-regular fa-face-smile fa-fw"></i
+              ><span>45 Friend</span>
+            </li>
+            <li>
+              <i class="fas fa-code-commit fa-fw"></i><span>18 Projects</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-newspaper fa-fw"></i
+              ><span>13 Articles</span>
+            </li>
+          </ul>
+          <div class="join d-flex">
+            <span>Joined 02/10/2021</span>
+            <div class="btns">
+              <a href="profile.html" class="btn-box bg-blue">profile</a>
+              <a href="" class="btn-box bg-red">remove</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <span class="fas fa-arrow-up up"></span>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

@@ -86,8 +86,8 @@ body {
   transition: var(--transtion);
 }
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
   background-color: white;
@@ -100,7 +100,7 @@ body {
   background-color: var(--blue-alt-color);
 }
 section {
-  padding: 10px;
+  padding: 15px;
 }
 .title-page {
   font-size: 27px;
@@ -124,7 +124,7 @@ section {
   background-color: #fff;
 }
 .title-page::after {
-  width: 30%;
+  width: 50%;
   background-color: #000;
 }
 .title-box {
@@ -146,6 +146,23 @@ section {
   .subtitle-box {
     font-size: 14px;
   }
+}
+.up {
+  position: fixed;
+  right: -100%;
+  bottom: 10px;
+  padding: 7px 9px;
+  border-radius: 10px;
+  background-color: var(--blue-color);
+  color: #fff;
+  cursor: pointer;
+  transition: var(--transtion);
+}
+.up.active {
+  right: 10px;
+}
+.up:hover {
+  background-color: var(--blue-alt-color);
 }
 /* =========================Header===================== */
 header {
@@ -362,6 +379,7 @@ header .container .header-content .img-user {
     display: inline-block;
   }
   .sidbar {
+    width: 300px;
     left: -100%;
   }
   .sidbar.active {
@@ -957,15 +975,137 @@ header .container .header-content .img-user {
   height: 34px;
   border-radius: 50%;
 }
-.projects .content-projects table td img:nth-child(1) {
-  margin-left: 0;
-}
-.projects .content-projects table td img:nth-child(2) {
+.projects .content-projects table td img:not(:first-child) {
   margin-left: -22px;
 }
-.projects .content-projects table td img:nth-child(3) {
-  margin-left: -22px;
+
+/* =========================Courses=====================  */
+.courses-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 15px;
 }
-.projects .content-projects table td img:nth-child(4) {
-  margin-left: -22px;
+.courses-content .item-cours {
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.courses-content .item-cours .imags {
+  position: relative;
+}
+.courses-content .item-cours .imags .coures-img {
+  width: 100%;
+}
+.courses-content .item-cours .imags .teacher-img {
+  position: absolute;
+  z-index: 3;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.courses-content .item-cours .info {
+  padding: 15px;
+}
+.courses-content .item-cours .info h4 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.courses-content .item-cours .info p {
+  color: var(--grey-color);
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.courses-content .item-cours .line {
+  position: relative;
+  display: block;
+  height: 1px;
+  background-color: #eee;
+}
+.courses-content .item-cours .line a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.courses-content .item-cours .dis-cours {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--grey-color);
+  font-size: 14px;
+}
+.courses-content .item-cours .dis-cours span i {
+  padding-right: 5px;
+}
+/* =========================Friends===================== */
+.friends-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 15px;
+}
+.friends-content .box-frind .des-frind {
+  position: relative;
+  text-align: center;
+  padding: 15px 0;
+}
+.friends-content .box-frind .des-frind .contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.friends-content .box-frind .des-frind .contact span {
+  padding: 5px 8px;
+  font-size: 13px;
+  border-radius: 100px;
+  background-color: #eee;
+  cursor: pointer;
+  color: var(--grey-color);
+  text-align: center;
+  transition: var(--transtion);
+}
+.friends-content .box-frind .des-frind .contact span:hover {
+  background-color: var(--blue-color);
+  color: #fff;
+}
+.friends-content .box-frind .des-frind img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.friends-content .box-frind .des-frind h4 {
+  font-size: 18px;
+  padding: 10px 0 3px;
+  text-transform: capitalize;
+}
+.friends-content .box-frind .des-frind p {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: var(--grey-color);
+}
+.friends-content .box-frind .list-frind {
+  padding: 10px 0;
+  border: 1px solid;
+  border-color: #eee transparent;
+}
+.friends-content .box-frind .list-frind li {
+  margin-bottom: 7px;
+  font-size: 14px;
+}
+.friends-content .box-frind .list-frind li i {
+  width: 30px;
+  margin-right: 5px;
+}
+.friends-content .box-frind .join {
+  padding: 10px 0;
+}
+.friends-content .box-frind .join span {
+  font-size: 13px;
+  color: var(--grey-color);
+}
+.friends-content .box-frind .join .btns a {
+  display: inline-block;
 }

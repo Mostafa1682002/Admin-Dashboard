@@ -45,3 +45,17 @@ addEventListener('scroll',()=>{
         allNumber.forEach(num=>{count(num)})
     }
 })
+
+
+//Up
+let upBtn=document.querySelector('.up');
+addEventListener('scroll',()=>{
+    if(scrollY>=120){
+        upBtn.classList.add('active')
+    }else{
+        upBtn.classList.remove('active')
+    }
+})
+upBtn.addEventListener('click',()=>{
+    window.scrollTo(0,0)
+})
