@@ -1348,3 +1348,84 @@ header .container .header-content .img-user {
     width: 100%;
   }
 }
+/*  =========================Plans=====================  */
+.plans-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 15px;
+}
+.plans-content .plan-box .head-box {
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+  outline: 2px solid;
+}
+.plans-content .plan-box .head-box.bg-green {
+  outline-color: var(--green-color);
+}
+.plans-content .plan-box .head-box.bg-blue {
+  outline-color: var(--blue-color);
+}
+.plans-content .plan-box .head-box.bg-orange {
+  outline-color: var(--orange-color);
+}
+
+.plans-content .plan-box .head-box h3 {
+  font-size: 27px;
+}
+.plans-content .plan-box .head-box p {
+  font-size: 25px;
+}
+.plans-content .plan-box .head-box p span {
+  font-size: 20px;
+  vertical-align: top;
+  padding-right: 3px;
+}
+.plans-content .plan-box ul {
+  margin-bottom: 10px;
+}
+.plans-content .plan-box ul li {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+.plans-content .plan-box ul li span i {
+  font-size: 15px;
+}
+.plans-content .plan-box ul li span i.yes {
+  color: var(--green-color);
+}
+.plans-content .plan-box ul li span i.no {
+  color: var(--red-color);
+}
+.plans-content .plan-box ul li span span {
+  font-size: 14px;
+}
+.plans-content .plan-box ul li i.help {
+  cursor: pointer;
+  color: var(--grey-color);
+  font-size: 15px;
+}
+.all-done {
+  text-align: center;
+  color: var(--grey-color);
+  font-size: 15px;
+  display: block;
+  padding: 5px;
+}
+@media (max-width: 768px) {
+  .plans-content {
+    grid-template-columns: minmax(250px, 1fr);
+  }
+  .plans-content .plan-box ul li span span {
+    font-size: 12px;
+  }
+  .plans-content .plan-box ul li i.help {
+    font-size: 13px;
+  }
+  .all-done {
+    padding: 0;
+    font-size: 14px;
+  }
+}
