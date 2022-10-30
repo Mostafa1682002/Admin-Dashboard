@@ -20,13 +20,15 @@ closeSidbar.addEventListener('click',()=>{
 //Progress
 let yearlyBox=document.querySelector('.yearly-box');
 let allspanProg=document.querySelectorAll('.prog span');
-addEventListener('scroll',()=>{
-    if(scrollY>=yearlyBox.offsetTop-350){
-        allspanProg.forEach((span)=>{
-            span.style.width=span.getAttribute('data-prog');
-        })
-    }
-})
+if(document.body.classList.contains('dashboard')){
+    addEventListener('scroll',()=>{
+        if(scrollY>=yearlyBox.offsetTop-350){
+            allspanProg.forEach((span)=>{
+                span.style.width=span.getAttribute('data-prog');
+            })
+        }
+    })
+}
 
 //Counter Number
 let ticketBox=document.querySelector('.tickets-box');
@@ -40,14 +42,16 @@ function count(number){
         }
     },2000/number.getAttribute('data-number'))
 }
-addEventListener('scroll',()=>{
-    if(scrollY>=ticketBox.offsetTop-350){
-        allNumber.forEach(num=>{count(num)})
-    }
-})
+if(document.body.classList.contains('dashboard')){
+    addEventListener('scroll',()=>{
+        if(scrollY>=ticketBox.offsetTop-350){
+            allNumber.forEach(num=>{count(num)})
+        }
+    })
+}
 
 
-//Up
+//Button Up
 let upBtn=document.querySelector('.up');
 addEventListener('scroll',()=>{
     if(scrollY>=120){

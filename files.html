@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN ICONS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Files</title>
+  </head>
+  <body>
+    <!-- =========================Header===================== -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <span class="fas fa-bars open-sidbar"></span>
+          <form action="">
+            <i class="fas fa-search"></i>
+            <input type="search" name="" id="" placeholder="Search...." />
+          </form>
+          <div class="user">
+            <div class="user-txt">
+              <h3 class="user-name">Mostafa</h3>
+              <p>Admin</p>
+            </div>
+            <img src="imgs/avatar.png" alt="" class="img-user" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- =========================Sidbar===================== -->
+    <div class="sidbar">
+      <span class="fas fa-times close-sidbar"></span>
+      <h2 class="logo">
+        <a href="index.html">Mostafa</a>
+      </h2>
+      <ul>
+        <li>
+          <a href="index.html"
+            ><i class="fa-solid fa-chart-bar fa-fw"></i
+            ><span>Dashboard</span></a
+          >
+        </li>
+        <li>
+          <a href="profile.html"
+            ><i class="fa-regular fa-user"></i><span>Profile</span></a
+          >
+        </li>
+        <li>
+          <a href="courses.html"
+            ><i class="fa-solid fa-graduation-cap fa-fw"></i
+            ><span>Courses</span></a
+          >
+        </li>
+        <li>
+          <a href="projects.html"
+            ><i class="fa-solid fa-diagram-project fa-fw"></i
+            ><span>Projects</span></a
+          >
+        </li>
+        <li>
+          <a href="files.html" class="active"
+            ><i class="fa-regular fa-file fa-fw"></i><span>files</span></a
+          >
+        </li>
+        <li>
+          <a href="plans.html"
+            ><i class="fa-regular fa-credit-card fa-fw"></i
+            ><span>Plans</span></a
+          >
+        </li>
+        <li>
+          <a href="friends.html"
+            ><i class="fa-regular fa-circle-user fa-fw"></i
+            ><span>friends</span></a
+          >
+        </li>
+        <li>
+          <a href="settings.html"
+            ><i class="fa-solid fa-gear"></i><span>Settings</span></a
+          >
+        </li>
+      </ul>
+      <div class="logout">
+        <a href="index.html"
+          ><img src="imgs/logout.svg" alt="" /><span>Logout</span></a
+        >
+      </div>
+    </div>
+    <!-- =========================Files===================== -->
+    <section class="files">
+      <h1 class="title-page">Files</h1>
+      <div class="files-content">
+        <div class="file-station box-white">
+          <h3 class="title-box">Files Statistics</h3>
+          <div class="station-box d-flex blue">
+            <div class="txt-sta">
+              <i class="fa-regular fa-file-pdf fa-lg c-blue"></i>
+              <div>
+                <p>PDF Files</p>
+                <span>130 files</span>
+              </div>
+            </div>
+            <span class="size">6.5 GB</span>
+          </div>
+          <div class="station-box d-flex green">
+            <div class="txt-sta">
+              <i class="fa-regular fa-file-pdf fa-lg c-green"></i>
+              <div>
+                <p>Images</p>
+                <span>115 files</span>
+              </div>
+            </div>
+            <span class="size">7.9GB</span>
+          </div>
+          <div class="station-box d-flex red">
+            <div class="txt-sta">
+              <i class="fa-regular fa-file-pdf fa-lg c-red"></i>
+              <div>
+                <p>Word Files</p>
+                <span>86 files</span>
+              </div>
+            </div>
+            <span class="size">5.3GB</span>
+          </div>
+          <div class="station-box d-flex orange">
+            <div class="txt-sta">
+              <i class="fa-regular fa-file-pdf fa-lg c-orange"></i>
+              <div>
+                <p>CSV Files</p>
+                <span>99 files</span>
+              </div>
+            </div>
+            <span class="size">2.7GB</span>
+          </div>
+          <a href="#" class="btn-box bg-blue"
+            ><i class="fas fa-angles-up"></i>upload</a
+          >
+        </div>
+        <div class="files-boxs">
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/pdf.svg" alt="" />
+              <p>my-file.pdf</p>
+            </div>
+            <span>Mostafa</span>
+            <div class="d-flex txt-file">
+              <span>27/09/2020</span>
+              <span>5.5MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/avi.svg" alt="" />
+              <p>my-file.avi</p>
+            </div>
+            <span>Admin</span>
+            <div class="d-flex txt-file">
+              <span>27/10/2021</span>
+              <span>11.5MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/psd.svg" alt="" />
+              <p>my-file.psd</p>
+            </div>
+            <span>Khaled</span>
+            <div class="d-flex txt-file">
+              <span>15/06/2022</span>
+              <span>10.9MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/dll.svg" alt="" />
+              <p>my-file.dll</p>
+            </div>
+            <span>Coder</span>
+            <div class="d-flex txt-file">
+              <span>20/11/2019</span>
+              <span>5.7MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/eps.svg" alt="" />
+              <p>my-file.eps</p>
+            </div>
+            <span>Uploader</span>
+            <div class="d-flex txt-file">
+              <span>10/03/2022</span>
+              <span>7.3MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/png.svg" alt="" />
+              <p>my-file.png</p>
+            </div>
+            <span>Desinger</span>
+            <div class="d-flex txt-file">
+              <span>11/11/2022</span>
+              <span>7.3MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/avi.svg" alt="" />
+              <p>my-file.avi</p>
+            </div>
+            <span>Admin</span>
+            <div class="d-flex txt-file">
+              <span>27/10/2021</span>
+              <span>11.5MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/psd.svg" alt="" />
+              <p>my-file.psd</p>
+            </div>
+            <span>Khaled</span>
+            <div class="d-flex txt-file">
+              <span>15/06/2022</span>
+              <span>10.9MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/dll.svg" alt="" />
+              <p>my-file.dll</p>
+            </div>
+            <span>Coder</span>
+            <div class="d-flex txt-file">
+              <span>20/11/2019</span>
+              <span>5.7MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/eps.svg" alt="" />
+              <p>my-file.eps</p>
+            </div>
+            <span>Uploader</span>
+            <div class="d-flex txt-file">
+              <span>10/03/2022</span>
+              <span>7.3MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/png.svg" alt="" />
+              <p>my-file.png</p>
+            </div>
+            <span>Desinger</span>
+            <div class="d-flex txt-file">
+              <span>11/11/2022</span>
+              <span>7.3MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/pdf.svg" alt="" />
+              <p>my-file.pdf</p>
+            </div>
+            <span>Mostafa</span>
+            <div class="d-flex txt-file">
+              <span>27/09/2020</span>
+              <span>5.5MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/psd.svg" alt="" />
+              <p>my-file.psd</p>
+            </div>
+            <span>Khaled</span>
+            <div class="d-flex txt-file">
+              <span>15/06/2022</span>
+              <span>10.9MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/dll.svg" alt="" />
+              <p>my-file.dll</p>
+            </div>
+            <span>Coder</span>
+            <div class="d-flex txt-file">
+              <span>20/11/2019</span>
+              <span>5.7MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/eps.svg" alt="" />
+              <p>my-file.eps</p>
+            </div>
+            <span>Uploader</span>
+            <div class="d-flex txt-file">
+              <span>10/03/2022</span>
+              <span>7.3MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/png.svg" alt="" />
+              <p>my-file.png</p>
+            </div>
+            <span>Desinger</span>
+            <div class="d-flex txt-file">
+              <span>11/11/2022</span>
+              <span>7.3MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/avi.svg" alt="" />
+              <p>my-file.avi</p>
+            </div>
+            <span>Admin</span>
+            <div class="d-flex txt-file">
+              <span>27/10/2021</span>
+              <span>11.5MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/psd.svg" alt="" />
+              <p>my-file.psd</p>
+            </div>
+            <span>Khaled</span>
+            <div class="d-flex txt-file">
+              <span>15/06/2022</span>
+              <span>10.9MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/avi.svg" alt="" />
+              <p>my-file.avi</p>
+            </div>
+            <span>Admin</span>
+            <div class="d-flex txt-file">
+              <span>27/10/2021</span>
+              <span>11.5MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/psd.svg" alt="" />
+              <p>my-file.psd</p>
+            </div>
+            <span>Khaled</span>
+            <div class="d-flex txt-file">
+              <span>15/06/2022</span>
+              <span>10.9MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/dll.svg" alt="" />
+              <p>my-file.dll</p>
+            </div>
+            <span>Coder</span>
+            <div class="d-flex txt-file">
+              <span>20/11/2019</span>
+              <span>5.7MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/eps.svg" alt="" />
+              <p>my-file.eps</p>
+            </div>
+            <span>Uploader</span>
+            <div class="d-flex txt-file">
+              <span>10/03/2022</span>
+              <span>7.3MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/png.svg" alt="" />
+              <p>my-file.png</p>
+            </div>
+            <span>Desinger</span>
+            <div class="d-flex txt-file">
+              <span>11/11/2022</span>
+              <span>7.3MB</span>
+            </div>
+          </div>
+          <div class="file-card box-white">
+            <i class="fa fa-download"></i>
+            <div class="img-file">
+              <img src="imgs/pdf.svg" alt="" />
+              <p>my-file.pdf</p>
+            </div>
+            <span>Mostafa</span>
+            <div class="d-flex txt-file">
+              <span>27/09/2020</span>
+              <span>5.5MB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <span class="fas fa-arrow-up up"></span>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
