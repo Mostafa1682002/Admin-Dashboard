@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN ICONS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Settings</title>
+  </head>
+  <body>
+    <!-- =========================Header===================== -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <span class="fas fa-bars open-sidbar"></span>
+          <form action="">
+            <i class="fas fa-search"></i>
+            <input type="search" name="" id="" placeholder="Search...." />
+          </form>
+          <div class="user">
+            <div class="user-txt">
+              <h3 class="user-name">Mostafa</h3>
+              <p>Admin</p>
+            </div>
+            <img src="imgs/avatar.png" alt="" class="img-user" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- =========================Sidbar===================== -->
+    <div class="sidbar">
+      <span class="fas fa-times close-sidbar"></span>
+      <h2 class="logo">
+        <a href="index.html">Mostafa</a>
+      </h2>
+      <ul>
+        <li>
+          <a href="index.html"
+            ><i class="fa-solid fa-chart-bar fa-fw"></i
+            ><span>Dashboard</span></a
+          >
+        </li>
+        <li>
+          <a href="profile.html"
+            ><i class="fa-regular fa-user"></i><span>Profile</span></a
+          >
+        </li>
+        <li>
+          <a href="courses.html"
+            ><i class="fa-solid fa-graduation-cap fa-fw"></i
+            ><span>Courses</span></a
+          >
+        </li>
+        <li>
+          <a href="projects.html"
+            ><i class="fa-solid fa-diagram-project fa-fw"></i
+            ><span>Projects</span></a
+          >
+        </li>
+        <li>
+          <a href="files.html"
+            ><i class="fa-regular fa-file fa-fw"></i><span>files</span></a
+          >
+        </li>
+        <li>
+          <a href="plans.html" class="active"
+            ><i class="fa-regular fa-credit-card fa-fw"></i
+            ><span>Plans</span></a
+          >
+        </li>
+        <li>
+          <a href="friends.html"
+            ><i class="fa-regular fa-circle-user fa-fw"></i
+            ><span>friends</span></a
+          >
+        </li>
+        <li>
+          <a href="settings.html"
+            ><i class="fa-solid fa-gear"></i><span>Settings</span></a
+          >
+        </li>
+      </ul>
+      <div class="logout">
+        <a href="index.html"
+          ><img src="imgs/logout.svg" alt="" /><span>Logout</span></a
+        >
+      </div>
+    </div>
+    <!-- =========================Settings===================== -->
+    <section class="settings">
+      <h1 class="title-page">Settings</h1>
+      <div class="settings-content">
+        <div class="item-sett box-white">
+          <h3 class="title-box">Site Control</h3>
+          <p class="subtitle-box">
+            Control The Website If There Is Maintenance
+          </p>
+          <div class="d-flex one sub-setting">
+            <div class="x">
+              <p>Website Control</p>
+              <span>Open/Close Website And Type The Reason</span>
+            </div>
+            <label class="toggle">
+              <input type="checkbox" class="toggle-checkbox" />
+              <div class="toggle-switch"></div>
+            </label>
+          </div>
+          <textarea name="" placeholder="Close Message Content"></textarea>
+        </div>
+        <div class="item-sett box-white">
+          <h3 class="title-box">General Info</h3>
+          <p class="subtitle-box">General Information About Your Account</p>
+          <form action="" class="form-general">
+            <div>
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="First Name"
+              />
+            </div>
+            <div>
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                placeholder="Last Name"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                value="o@nn.sa"
+                readonly
+              />
+              <a href="#">change</a>
+            </div>
+          </form>
+        </div>
+        <div class="item-sett box-white">
+          <h3 class="title-box">Security Info</h3>
+          <p class="subtitle-box">Security Information About Your Account</p>
+          <div class="d-flex one sub-setting">
+            <div class="x">
+              <p>Password</p>
+              <span>Last Change On 25/10/2021</span>
+            </div>
+            <a href="#" class="btn-box bg-blue">change</a>
+          </div>
+          <div class="d-flex sub-setting">
+            <div class="x">
+              <p>Two-Factor Authentication</p>
+              <span>Enable/Disable The Feature</span>
+            </div>
+            <label class="toggle">
+              <input type="checkbox" class="toggle-checkbox" checked />
+              <div class="toggle-switch"></div>
+            </label>
+          </div>
+          <div class="d-flex sub-setting">
+            <div class="x">
+              <p>Devices</p>
+              <span>Check The Login Devices List </span>
+            </div>
+            <span class="days">Device</span>
+          </div>
+        </div>
+        <div class="item-sett box-white">
+          <h3 class="title-box">Social Info</h3>
+          <p class="subtitle-box">Social Media Information</p>
+          <form action="" class="form-social">
+            <div>
+              <i class="fab fa-twitter"></i>
+              <input type="text" placeholder="Twitter Username" />
+            </div>
+            <div>
+              <i class="fab fa-facebook"></i>
+              <input type="text" placeholder="Facebook Username" />
+            </div>
+            <div>
+              <i class="fab fa-linkedin"></i>
+              <input type="text" placeholder="Linkedin Username" />
+            </div>
+            <div>
+              <i class="fab fa-youtube"></i>
+              <input type="text" placeholder="Youtube Username" />
+            </div>
+          </form>
+        </div>
+        <div class="item-sett box-white">
+          <h3 class="title-box">Widgets Control</h3>
+          <p class="subtitle-box">Show/Hide Widgets</p>
+          <div class="check">
+            <input type="checkbox" id="1" checked />
+            <label for="1">Quick Draft</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="2" checked />
+            <label for="2">Yearly Targets</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="3" />
+            <label for="3">Tickets Statistics</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="4" checked />
+            <label for="4">Latest News</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="5" />
+            <label for="5">Latest Tasks</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="6" checked />
+            <label for="6">Top Search Items</label>
+          </div>
+        </div>
+        <div class="item-sett box-white">
+          <h3 class="title-box">Backup Manager</h3>
+          <p class="subtitle-box">Control Backup Time And Location</p>
+          <div class="check">
+            <input type="radio" id="d" name="backup" checked />
+            <label for="d">Daily</label>
+          </div>
+          <div class="check">
+            <input type="radio" id="dd" name="backup" />
+            <label for="dd">Weekly</label>
+          </div>
+          <div class="check">
+            <input type="radio" id="ddd" name="backup" />
+            <label for="ddd">Monthly</label>
+          </div>
+          <div class="backup-content">
+            <div class="backup-box active">
+              <i class="fas fa-server"></i>
+              <span>Megaman</span>
+            </div>
+            <div class="backup-box">
+              <i class="fas fa-server"></i>
+              <span>Zero</span>
+            </div>
+            <div class="backup-box">
+              <i class="fas fa-server"></i>
+              <span>Sigma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <span class="fas fa-arrow-up up"></span>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

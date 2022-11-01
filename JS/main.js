@@ -50,7 +50,6 @@ if(document.body.classList.contains('dashboard')){
     })
 }
 
-
 //Button Up
 let upBtn=document.querySelector('.up');
 addEventListener('scroll',()=>{
@@ -62,4 +61,13 @@ addEventListener('scroll',()=>{
 })
 upBtn.addEventListener('click',()=>{
     window.scrollTo(0,0)
+})
+
+//Backup Manager
+let backupContent=document.querySelectorAll('.backup-box');
+backupContent.forEach((box)=>{
+    box.addEventListener('click',()=>{
+        backupContent.forEach((e)=>e.classList.remove('active'))
+        box.classList.add('active')
+    })
 })
